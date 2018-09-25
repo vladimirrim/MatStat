@@ -21,7 +21,7 @@ def calculate_exp(k):
     for val in values:
         mean_exp += val ** k
     mean_exp /= 100
-    return (math.factorial(k) * mean_exp) ** (1 / k)
+    return (mean_exp / math.factorial(k)) ** (1 / k)
 
 
 if __name__ == '__main__':
